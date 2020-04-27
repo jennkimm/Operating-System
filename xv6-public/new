@@ -1,0 +1,7 @@
+.global fork;
+    fork:
+    movl $SYS_fork, $eax;
+    int $T_SYSCALL;
+    ret
+
+    opcode src, dst
